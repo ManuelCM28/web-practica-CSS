@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../images/IconosPestañas/Icono_Registro.png">
+        <link rel="stylesheet" type="text/css" href="../css/Estilos.css">
+    </head>
+    <body>
+        
+        <header>
+            <div id="divLogoTxt">
+                <a id="logoTxt" href="./1.Index.html">Centro Deportivo <br><br> "Calisthenics Never Die"</a>
+            </div>
+                <a href="./1.Index.html"><img id="logoImg" src="../images/Imágenes general/NoPainNoGain.png"></a>  
+            <div id="divNav">    
+                <nav>
+                    <ul>
+                        <li><a href="1.Index.html">Inicio</a></li>
+                        <li><a href="2.Productos_Servicios.html">Productos y Servicios</a></li>
+                        <li><a href="3.Quienes_Somos.html">¿Quiénes somos?</a></li>
+                        <li><a href="4.Contacto.html">Contacto</a></li>
+                        <li><a href="5.Registro.html">Registro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <h1>Registro</h1>
+        <form action="url(registroCalistenics.php)" method="GET" name="RegistroCalistenics" autocomplete="on" accept-charset="UTF-8">
+            <fieldset>
+                <legend><b>Datos de acceso</b></legend>
+                <label for="idUS">Nombre de usuario:*</label><br>
+                <input type="text" id="idUS" name="idUS" required title="Introduza su nombre de usuario"><br><br>
+                <label for="passUS">Contrañesa:*</label><br>
+                <input type="password" id="passUS" name="passUS" required title="Introduza su contraseña"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Información personal</b></legend>
+                <label for="nombreUs">Nombre:*</label><br>
+                <input type="text" id="nombreUS" name="nombreUS" required title="Introduza su nombre"><br><br>
+                <label for="apellidosUS">Apellidos:</label><br>
+                <input type="text" id="apellidosUS" name="apellidosUS"><br><br>
+                <label for="fechaNacUs">Fecha de nacimiento:*</label><br>
+                <input type="date" id="fechaNacUs" name="fechaNacUs" required title="Introduza su fecha de nacimiento"><br><br>
+                <label for="direccionUS">Dirección:</label><br>
+                <input type="text" id="direccionUS" name="direccionUS"><br><br>
+                <label for="telUS">Teléfono:*</label><br>
+                <input type="text" id="telUS" name="telUS" required pattern="[0-9]{9}" maxlength="9" title="Introduza los nueve dígitos de su número de teléfono"><br><br>
+                <label for="mailUS">Correo electrónico:*</label><br>
+                <input type="email" id="mailUS" name="mailUS" required title="Introduza su correo electrónico"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Otra Información</b></legend>
+                <div class="alineadoListasForm">
+                    <label for="interesesUs"><u>Intereses:</u></label>
+                        <ul id="listaIntereses" class="listasForm">
+                            <li>
+                                <input type="checkbox">Natación
+                            </li>
+                            <li>
+                                <input type="checkbox">Fútbol
+                            </li>
+                            <li>
+                                <input type="checkbox">Tenis
+                            </li>
+                            <li>
+                                <input type="checkbox">Padel
+                            </li>
+                            <li>
+                                <input type="checkbox">Baloncesto
+                            </li>
+                        </ul>
+                </div>
+                <div class="alineadoListasForm">
+                    <label for="listaConocerWeb"><u>¿Cómo conoció el sitio web?:</u></label>
+                        <ul id="listaConocerWeb" class="listasForm">
+                            <li>
+                                <input type="checkbox">Televisión
+                            </li>
+                            <li>
+                                <input type="checkbox">Redes sociales
+                            </li>
+                            <li>
+                                <input type="checkbox">Familiares
+                            </li>
+                            <li>
+                                <input type="checkbox">Amigos
+                            </li>
+                            <li>
+                                <input type="checkbox">Herramientas de búsqueda
+                            </li>
+                        </ul>
+                </div>
+                <div style="text-align: center; padding-top: 2%;">
+                    <label><u>¿Está interesado en recibir publicidad y/o boletines de la empresa?</u></label><br>
+                        <input type="radio" name="si/no" checked>Si
+                        <input type="radio" name="si/no">No             
+                </div>
+            </fieldset>
+            <input type="submit" name="Enviar" value="Enviar datos">
+            <input style="float: right;" type="reset" name="Borrar" value="Borrar datos">
+        </form>
+        
+        <footer id="piePag">
+            <p>&copy; 2020 C.D "Calisthenics Never Die" &emsp;&emsp;&emsp;&emsp; Avda Crosfit=Caca 20º &emsp;&emsp;&emsp;&emsp; 925000000 &emsp;&emsp;&emsp;&emsp; calisthenicsneverdie@docalistenia.com</p>
+        </footer>
+
+    </body>
+</html>
